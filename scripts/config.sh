@@ -5,6 +5,16 @@ repo_locations=(
     "https://github.com/Caitlin-cooling/loofah-frontend.git"
 )
 
-java_repos=(
+mvn_repos=(
     "loofah-graph-api"
 )
+
+npm_repos=(
+    "loofah-frontend"
+)
+
+other_repos=(
+    "loofah-tooling"
+)
+
+all_repos=( "${mvn_repos[@]}" "${npm_repos[@]}" "${other_repos[@]}")

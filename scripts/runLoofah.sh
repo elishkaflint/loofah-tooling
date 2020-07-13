@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# will be run from loofah-tooling's parent directory
-
 source ./config.sh
 
 cd ../..
@@ -12,7 +10,6 @@ do
     cd ..
 done
 
-pwd
 cd ./loofah-tooling/docker
 docker-compose -f docker-compose-loofah.yml up --build
 

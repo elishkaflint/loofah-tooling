@@ -4,7 +4,7 @@ This repository can be used to set up everything you need for Loofah.
 
 ## Getting started
 
-To pull down all Loofah's code, create a new parent directory, clone this repo and then run the `setupLoofah` script:
+To pull down all Loofah's code, create a new parent directory, clone this repo and then run the `setupLoofah` script from the scripts directory:
 
 ```
 mkdir loofah-parent-directory
@@ -28,6 +28,10 @@ To run Loofah, either:
 or:
 
 - navigate to `loofah-tooling/scripts` and run `./runLoofah.sh` (will build any java microservices automatically)
+
+## Other scripts
+
+Run `./checkoutBranch.sh <BRANCH_NAME>` from the scripts directory to checkout a particular branch in all repositories (if the branch is unavailable master will be checked out)
 
 ## Creating new Loofah components
 
