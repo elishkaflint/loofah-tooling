@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo $(curl \
-  localhost:8080/skills \
+  localhost:8080 \
   -s \
   -X POST \
   -H "Content-Type: application/json" \
