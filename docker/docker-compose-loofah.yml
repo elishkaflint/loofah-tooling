@@ -7,6 +7,15 @@ services:
     ports:
     - 27017:27017
 
+  loofah-db-init:
+    build:
+      context: ../../loofah-db-init
+      dockerfile: ./Dockerfile
+    links:
+      - loofah-database
+    depends_on:
+      - loofah-database
+
   loofah-graph-api:
     build:
       context: ../../loofah-graph-api

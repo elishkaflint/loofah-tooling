@@ -12,7 +12,6 @@ do
     cd ..
 done
 
-pwd
 cd ./loofah-tooling/docker
 docker-compose -f docker-compose-loofah.yml up --build
 
