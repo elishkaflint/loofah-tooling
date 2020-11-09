@@ -18,6 +18,14 @@ Navigate back to the parent directory and it should now include all Loofah repos
 
 ## Running Loofah
 
+### Seeding Loofah dummy data
+
+We have a loofah-db-init project which seeds our mongo db with a set of skills. Because our repos are currently public, we don't keep the data on Github and you will need to add it to your local project.
+
+Please follow the "get started" instructions in the loofah-db-init project before trying to run all microservices. 
+
+### Running all microservices
+
 Loofah Tooling includes a docker-compose file which can be used to run all Loofah's components as a network of docker containers.
 
 To run Loofah, either:
@@ -32,3 +40,5 @@ or:
 ## Creating new Loofah components
 
 The github location of any new components should be added to `scripts/config.sh` to ensure they are included in the setup script going forward. 
+
+
