@@ -2,6 +2,7 @@
 
 # will be run from loofah-tooling's parent directory
 
+docker rm $(docker ps -a -q)
 source ./config.sh
 
 cd ../..
