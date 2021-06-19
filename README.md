@@ -18,11 +18,14 @@ Navigate back to the parent directory and it should now include all Loofah repos
 
 ## Running Loofah
 
-### Seeding Loofah dummy data
+### Seeding Loofah data
 
-We have a loofah-db-init project which seeds our mongo db with a set of skills. Because our repos are currently public, we don't keep the data on Github and you will need to add it to your local project.
+Loofah data is stored in markdown files in loofah-data. Note that this is a private repository.
 
-Please follow the "get started" instructions in the loofah-db-init project before trying to run all microservices. 
+When running up Loofah using the runLoofah.sh script, loofah-tooling converts the files in loofah-data into json, copies
+ the json files into loofah-db-init, which seeds the data in our MongoDB when we run all the services via docker-compose. 
+ 
+Responsibilities have been kept in different repos so that we can pick the bits we need when moving over to AWS.
 
 ### Running all microservices
 
